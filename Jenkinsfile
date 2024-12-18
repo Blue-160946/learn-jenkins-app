@@ -47,7 +47,7 @@ pipeline {
                 sh '''
                     ls -la
                     node --version
-                    sudo npm install netlify-cli -g
+                    npm install -g --unsafe-perm=true netlify-cli
                 '''
             }
         }
